@@ -1,0 +1,128 @@
+input[name=stopwatch] {
+    position: absolute;
+    top: 3px;
+    left: 356px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    background-color: #f5f5f5;
+    color: #333;
+    padding: 2px;
+    width: 170px;
+}
+
+#game-over, #win-win {
+    position: fixed;
+    top: 12%;
+    left: 11%;
+    transform: translate(-50%, -50%);
+}
+
+#game-over {
+    background-image: url('../img/dead_x-x.png');
+    width: 1100px;
+    height: 600px;
+    z-index: 9999;
+    display: none;
+}
+
+#win-win {
+    background-image: url('../img/win_yeah.png');
+    width: 1100px;
+    height: 600px;
+    z-index: 9999;
+    display: none;
+}
+
+/* Center h1 and h2 text */
+#game-over h1, #win-win h1 {
+    position: absolute;
+    top: 63px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 4rem;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+}
+
+#game-over h2, #win-win h2 {
+    position: absolute;
+    top: 26%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #ffffff;
+}
+
+.button-bad {
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #b33838;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #4d0000;
+}
+
+.button-bad:hover {
+    background-color: #803838
+}
+
+.button-bad:active {
+    background-color: #ff0000;
+    box-shadow: 0 5px #1a0000;
+    transform: translateY(4px);
+}
+
+
+.button-good {
+    position: absolute;
+    top: 40%;
+    left: 43%;
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #255d00;
+}
+
+.button-good:hover {
+    background-color: #3e8e41
+}
+
+.button-good:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #133100;
+    transform: translateY(4px);
+}
+
+
+@keyframes scale-in {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

@@ -1,0 +1,150 @@
+#menu-container {
+    background-image: url('../img/menu.png');
+    position: fixed;
+    display: none;
+    z-index: 9999;
+    width: 840px;
+    height: 696px;
+    top: 5%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+}
+
+.button-menu1 {
+    position: absolute;
+    top: 200px;
+    left: 325px;
+    display: inline-block;
+    padding: 15px 40px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #af9b4c;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #5d4000;
+}
+
+.button-menu1:hover {
+    background-color: #8e6e3e
+}
+
+.button-menu1:active {
+    background-color: #8e6e3e;
+    box-shadow: 0 5px #133100;
+    transform: translateY(4px);
+}
+
+.button-menu2 {
+    position: absolute;
+    top: 280px;
+    left: 315px;
+    display: inline-block;
+    padding: 15px 40px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #af9b4c;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #5d4000;
+}
+
+.button-menu2:hover {
+    background-color: #8e6e3e
+}
+
+.button-menu2:active {
+    background-color: #8e6e3e;
+    box-shadow: 0 5px #133100;
+    transform: translateY(4px);
+}
+
+.button-menu3 {
+    position: absolute;
+    top: 360px;
+    left: 335px;
+    display: inline-block;
+    padding: 15px 40px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #af9b4c;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #5d4000;
+}
+
+.button-menu3:hover {
+    background-color: #8e6e3e
+}
+
+.button-menu3:active {
+    background-color: #8e6e3e;
+    box-shadow: 0 5px #133100;
+    transform: translateY(4px);
+}
+
+.button-menu4 {
+    position: absolute;
+    top: 440px;
+    left: 325px;
+    display: inline-block;
+    padding: 15px 40px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #af9b4c;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #5d4000;
+}
+
+.button-menu4:hover {
+    background-color: #8e6e3e
+}
+
+.button-menu4:active {
+    background-color: #8e6e3e;
+    box-shadow: 0 5px #133100;
+    transform: translateY(4px);
+}
+
+.button-for-menu {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: inline-block;
+    padding: 0px 0px;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #af9b4c;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #5d4000;
+}
+
+.button-for-menu:hover {
+    background-color: #8e6e3e
+}
+
+.button-for-menu:active {
+    background-color: #8e6e3e;
+    box-shadow: 0 5px #133100;
+    transform: translateY(4px);
+}
+
+

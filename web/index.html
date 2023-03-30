@@ -1,0 +1,87 @@
+<html>
+<head>
+    <title>Danger Forest [BETA_2.0]</title>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="../img/player.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/bodyCss.css">
+    <link rel="stylesheet" href="../css/canvasCss.css">
+    <link rel="stylesheet" href="../css/windowsCss.css">
+    <link rel="stylesheet" href="../css/customCss.css">
+    <link rel="stylesheet" href="../css/menuCss.css">
+
+</head>
+<body>
+</body>
+<div id="game-over">
+    <h1>Game over</h1>
+    <h2>Total steps: <span id="step-count1"></span></h2>
+    <button class="button-bad">Restart</button>
+</div>
+<div id="win-win">
+    <h1>You won!</h1>
+    <h2>Total steps: <span id="step-count2"></span></h2>
+    <button class="button-good">Next level</button>
+</div>
+<div id="menu-container">
+    <button class="button-menu1">Continue</button>
+    <button class="button-menu2">New Game</button>
+    <button class="button-menu3">Custom</button>
+    <button title="Is in development" class="button-menu4">2 Players</button>
+</div>
+<button class="button-for-menu">
+    <img src="../img/menu_button.png" alt="Menu">
+</button>
+
+<form name=MyForm>
+    <input name=stopwatch size=10 value="00:00:00.00" disabled>
+</form>
+
+<div id="custom-container">
+  <label for="enemy-input">Enemies:</label>
+  <input id="enemy-input" type="number" min="0" max="100" value="1">
+  <label for="width-input">Width:</label>
+  <input id="width-input" type="number" min="4" max="24" step="2" value="4" placeholder="fold 2">
+  <label for="height-input">Heidth:</label>
+  <input id="height-input" type="number" min="4" max="14" step="2" value="4" placeholder="fold 2">
+  <button class="apply-btn" id="apply-btn">Apply</button>
+</div>
+
+
+<audio id="audio">
+  <source src="/Users/misha/PycharmProjects/DangerForest2.0/music/eeb97203442250b.mp3" type="audio/mp3">
+</audio>
+
+<audio id="gameover">
+  <source src="/Users/misha/PycharmProjects/DangerForest2.0/music/gameover.mp3" type="audio/mp3">
+</audio>
+
+<audio id="win">
+  <source src="/Users/misha/PycharmProjects/DangerForest2.0/music/win.mp3" type="audio/mp3">
+</audio>
+
+<audio id="bg">
+  <source src="/Users/misha/PycharmProjects/DangerForest2.0/music/8-bit-dream-land-142093.mp3" type="audio/mp3">
+</audio>
+
+
+
+
+
+<canvas id="canvas"></canvas>
+<script src="../music/music.js"></script>
+<script src="../script/other/sec.js"></script>
+<script src="../script/enemy/enemy_move.js"></script>
+<script src="../script/enemy/enemy_storage.js"></script>
+<script src="../script/other/random_functions.js"></script>
+<script src="../script/other/generate_field.js"></script>
+<script src="../script/player/player_move.js"></script>
+<script src="../script/other/objects.js"></script>
+<script src="../script/main/windows.js"></script>
+<script src="../script/main/menu.js"></script>
+<script src="../script/main/main.js" type="application/javascript"></script>
+
+
+</body>
+</html>
+
+    
