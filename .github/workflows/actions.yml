@@ -1,0 +1,26 @@
+name: CI/CD
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Build and deploy Docker image
+        uses: docker/build-push-action@v2
+        with:
+          context: .
+          push: true
+          tags: TheFimerHub/DangerForest3.0:latest
+
+      - name: Deploy with Docker Compose
+        uses: docker/compose-action@v1
+        with:
+          compose-file: docker-compose.yaml

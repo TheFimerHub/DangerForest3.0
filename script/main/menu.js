@@ -50,11 +50,11 @@ function createMenu() {
 
             applyButton.addEventListener('click', function () {
                 playButtton()
-                customDiv.style.display = 'none';
                 localStorage.setItem('counter', 0);
                 localStorage.setItem('heightC', heightInput.value)
                 localStorage.setItem('widthC', widthInput.value)
                 localStorage.setItem('enemyC', enemyInput.value)
+                customDiv.style.display = 'none';
                 reloading()
             });
 
